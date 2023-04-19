@@ -1,0 +1,40 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --bs-btn-color: #000;
+    --bs-btn-bg: #ffffff; 
+}
+
+* {
+    box-sizing: inherit; /* kế thừa thẻ chứa nó */
+}
+
+
+/* 1rem = 16px trong TH html -fontsize = 100%
+html fontsize = 62.5% => 1rem = 10px; 1.2rem = 12px
+*/
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* responsive */
+.grid {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+} 
+
+.grid__ful-width {   /*nếu ko thích 1200px mặc định nữa thi width = 100%*/
+    width: 100%;
+} 
+
+.grid-row {  
+    display: flex; /*thẻ nào nằm trong class này sẽ nằm trên 1 hàng ngang*/
+    flex-wrap: wrap;   /*những thẻ con có tổng S lớn hơn the cha thì sẽ bị xuống dòng*/
+} 
+
